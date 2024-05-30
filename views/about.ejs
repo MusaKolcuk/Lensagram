@@ -1,0 +1,66 @@
+<%- include("partials/_header") %>
+<!-- bir şablon dosyasının "include" yöntemiyle ana şablona dahil edilmesini sağlar. -->
+<!-- body -->
+<body class="main-layout inner_page">
+  <!-- loader  -->
+  <div class="loader_bg">
+    <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+  </div>
+  <!-- end loader -->
+
+  <!-- header -->
+  <%- include("partials/_menu") %>
+
+  <!-- end header inner -->
+  <!-- about -->
+  <div class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="titlepage text_align_left">
+            <span style="color: #f6388e">01</span>
+            <h2>About Us</h2>
+            <p>
+              Hello Lensagram Community! Lensagram is the meeting point for
+              photography enthusiasts. We created this platform for those who
+              see a story in every frame and love to share it. Lensagram not
+              only allows you to upload your photos but also serves as a way to
+              share, discover, and get inspired by them. We take pride in being
+              part of a community with diverse talents and interests. From
+              natural landscapes to cityscapes, street photography to portraits,
+              you can find every kind of photograph here. Lensagram enables you
+              to explore new perspectives and express your creativity.
+            </p>
+            <div id="moreText" style="display: none">
+              <p>
+                But Lensagram is more than just a photo-sharing site; it's a
+                community. Here, people passionate about photography come
+                together, share experiences, and support each other. We believe
+                this platform will inspire us all and help us grow. Join the
+                Lensagram community, step into the mesmerizing world of
+                photography enthusiasts, and tell your own story. Grab your
+                camera, and embark on the Lensagram journey!
+              </p>
+            </div>
+            <a
+              class="read_more"
+              href="javascript:void(0);"
+              onclick="document.getElementById('moreText').style.display = 'block'; this.style.display = 'none';"
+              >Read More</a
+            >
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="about_img">
+            <figure><img src="images/about_img.png" alt="#" /></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end about -->
+  <!-- end footer -->
+
+  <%- include("partials/_footer") %>
+</body>
